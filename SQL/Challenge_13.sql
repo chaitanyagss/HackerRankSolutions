@@ -1,0 +1,2 @@
+--Query the list of CITY names from STATION which have vowels (i.e., a, e, i, o, and u) as both their first and last characters. Your result cannot contain duplicates.
+select distinct(city) from station where (city like 'A%' OR city like 'E%' OR city like 'I%' OR city like 'O%' OR city like 'U%') AND (city like '%a' OR city like '%e' OR city like '%i' OR city like '%o' OR city like '%u');
